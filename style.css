@@ -1,0 +1,61 @@
+html{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+#navbar{
+    position: sticky;
+    width: 100%;
+}
+
+#navbar .navbar-nav .nav-link{
+    position: relative;
+}
+
+#navbar .navbar-nav .nav-link::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+    background-color: #161616;
+    transition: width 0.3s ease-in-out;
+}
+
+#navbar .navbar-nav .nav-link:hover::before{
+    color: #161616;
+    width: 100%;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-item{
+    padding: 1vw;
+}
+
+#cards{
+    display: block;
+    padding: 1vw;
+}
+
+.card, #allRecipes{
+    padding: 2vw;
+}
+
+#formContainer{
+    padding: 4vw;
+    margin-bottom: 5vw;
+    max-width: 100%;
+}
+
+label{
+    display: block;
+    margin-bottom: 1vw;
+    margin-top: 2vw;
+}
+
+#check{
+    margin-top: 2.3vw;
+}
